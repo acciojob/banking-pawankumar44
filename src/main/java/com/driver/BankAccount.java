@@ -29,6 +29,14 @@ public class BankAccount {
         return balance;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public double getMinBalance() {
+        return minBalance;
+    }
+
     public void withdraw(double amount) throws Exception {
         // Remember to throw "Insufficient Balance" exception, if the remaining amount would be less than minimum balance
         double newBalance = this.balance-amount;
